@@ -31,7 +31,7 @@ class DataLoader(object):
 
     def load_tags(self):
         tags = []
-        file_path = os.path.join(self.data_dir, 'tags.txt')
+        file_path = os.path.join(self.data_dir, 'h1_7.txt')
         with open(file_path, 'r') as file:
             for tag in file:
                 tags.append(tag.strip())
