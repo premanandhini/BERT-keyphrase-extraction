@@ -2748,7 +2748,7 @@ if __name__ == '__main__':
     logging.info("Loading the dataset...")
 
     # Initialize the DataLoader
-    data_loader = DataLoader(args.data_dir, args.bert_model_dir, params, token_pad_idx=0)
+    data_loader = DataLoader(args.data_dir, args.model_dir, params, token_pad_idx=0)
 
     # Load data
     test_data = data_loader.load_data('test')
